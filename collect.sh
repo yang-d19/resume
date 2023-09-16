@@ -22,16 +22,14 @@ traverse_directory() {
                 file_type=$(echo $file | cut -d/ -f 3)
                 date=$(echo $file | cut -d/ -f 4)
 
-                # echo $file_type $date
+                if [[ $file_type != "pdf" ]]; then
+                    new_filename="resume_${file_type}_Ding_Yang_${date}.pdf"
 
-                new_filename="resume_${file_type}_Ding_Yang_${date}.pdf"
+                    cp "$file" "$destination_directory/$new_filename"
+                    # Move the file to the destination directory
 
-                # echo $new_filename
-
-                cp "$file" "$destination_directory/$new_filename"
-                # Move the file to the destination directory
-
-                echo "Copied: $file -> $destination_directory/$new_filename"
+                    echo "Copied: $file -> $destination_directory/$new_filename"
+                fi
             fi
         fi
     done
