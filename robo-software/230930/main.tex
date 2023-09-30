@@ -1,0 +1,195 @@
+% Welcome to the simple Undergraduate Complexity Research CV-resume template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.7in}
+% \addtolength{\basemargin}{-0.5in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% change the font size of each section title
+\titleformat{\section}{\large}{}{0em}{}[\titlerule]
+
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textnormal{#3} & \textnormal{#4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=11pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%for social icons
+\usepackage{fontawesome5}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\LARGE\textbf{Ding Yang} \\[7.5pt]
+\href{}{\raisebox{-0.05\height}\faHouseUser \ \textcolor{blue}{Ithaca, NY} } \ $|$ \ 
+\href{}{\raisebox{-0.05\height}\faPhone \ \textcolor{blue}{(607) 379-2612} } \ $|$ \ 
+\href{https://github.com/yang-d19}{\raisebox{-0.05\height}\faGithub\ \textcolor{blue}{Github} } \ $|$ \ 
+\href{https://www.linkedin.com/in/ding-yang-829248219}{\raisebox{-0.05\height}\faLinkedin\ \textcolor{blue}{Linkedin} }
+\ $|$ \ 
+\href{https://yang-d19.github.io}{\raisebox{-0.05\height}\faGlobe \ \textcolor{blue}{Blog}} \ $|$ \ 
+\href{mailto:dy297@cornell.edu}{\raisebox{-0.05\height}\faEnvelope \ \textcolor{blue}{dy297@cornell.edu}} 
+\end{tabularx}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Cornell University}{Aug 2023 -- Present}
+        {\textbf{Master of Engineering in Electrical and Computer Engineering}}{Ithaca, NY, United States}
+        \begin{itemize}[leftmargin=0pt]
+            \setlength{\itemsep}{-1pt}
+            \item[] \small{\textit{Relevant Courses}: Database System, Algorithm Analysis, Digital Microcontroller, Embedded Operating System}
+            \item[] \small{\textit{Activities}: Particiapted in a group project to rewrite arXiv's code base and re-home the services to google cloud (GCP)}
+        \end{itemize}
+    \resumeSubheading
+        {Tsinghua University}{Aug 2019 -- Jun 2023}
+        {\textbf{Bachelor of Engineering in Automation}}{Beijing, China}
+        \begin{itemize}[leftmargin=0pt]
+            \setlength{\itemsep}{-1pt}
+            \item[] \small{\textit{Relevant Courses}: Operating Systems, Data Structure, Computer Networks, Artificial Intelligence, Automatic Control}
+            \item[] \small{\textit{Student Organization}: Leader of contest department in Student Science and Technology Association}
+            \item[] \small{\textit{Honors}: Excellence Award for Social Activities · First Prize of National Olympiad in Informatics in Provinces}
+        \end{itemize}
+\resumeSubHeadingListEnd
+
+% %-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+% % This section can include programming or spoken languages, text editing and general software knowledge, certifications, version control or project management tools, or other skills that might be relevant. You can include as many or as few as you like: delete or add as needed.  
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+     \textbf{Languages}{: C · C++ · Python · SQL · Java · Rust} \\
+     \textbf{Frameworks}{: Node.js · Django · Apache Spark · Tensorflow · ROS · RaspberryPi} \\
+     \textbf{Tools \& Services}{: Git · CMake · Docker · WSL · VSCode · AWS · Jupyter Notebook }
+    }}
+ \end{itemize}
+
+%-----------OTHER EXPERIENCE-----------
+\section{\textbf{INTERNSHIP}}
+% if you have been employed, do volunteer activities, or have held other formal or informal jobs, you can list them here.   
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern · Airwallex}{Jun -- Sept 2022}
+      {Shanghai, China}{}
+      \resumeItemListStart
+        \small
+        \resumeItem{Assessed transaction risks by building machine learning platform and robust data pipelines. }
+        \resumeItem{Developed a python library named Vivqu based on Apache Spark and AWS Deequ to provide metric verification, visualization, defect analysis for big data with beautiful UI design.}
+        \resumeItem{Integrated the  powerful tool for data scientists into Kubeflow machine learning workflows to help machine learning engineers get alert before defected data entering models. Now available on PyPI: \href{https://pypi.org/project/vivqu/}{\textcolor{blue}{pypi.org/project/vivqu}}}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern · ByteDance}{Aug -- Aug 2021}
+      {Beijing, China}{}
+      \resumeItemListStart
+        \small\resumeItem{Constructed an Operator-Performance dictionary in a group of 4 members through collaboration, which combined performance test data and operators of different neural network models. Employed machine learning models like SVM to fit the existed data and predict performance of new models.}
+        \resumeItem{Helped engineers effectively bypass neural network models that are too complex to run on mobile devices without running exhaustive tests, thus increased efficiency by more than 90\%.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{\textbf{PROJECTS}}
+% it is not expected that applicants have research experience but this section can include experience gained in a laboratory course, shadowing experiences, or group or independent research projects
+\resumeSubHeadingListStart
+
+\resumeSubheading
+        {Multi-UAV  Collaborative Scene Reconstruction}{Sept 2022 -- Aug 2023}
+        {Tsinghua University}{}
+      \resumeItemListStart
+        \small\resumeItem{Constructed a four-rotor uav (Unmanned Aerial Vehicle) platform with stereo camera, Intel NUC and IMU. Employed ego-planner algorithm for path planning and scene reconstruction. Improved the algorithm to support RGB Map reconstruction and multi-uav SLAM collaboration and tested the system in real world.}
+        \resumeItem{Deployed the system in real-world complicated and no-GPS environment to carry out hazard detection efficiently.}
+    \resumeItemListEnd
+
+\resumeSubheading
+        {Information Sharing Website with Authentication}{Jul -- Aug 2023}
+        {Tsinghua University}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Developed a website based on Django to share graduate application information within the university, which supports login check and register authentication through school mailbox.}
+        \resumeItem{Generated the main content by MkDocs, a fast static site generator. The web server process was deployed on Gunicorn, a Python WSGI server, and the reverse proxy and static content was provided by Apache Web Server. }
+        \resumeItem{Deployed the project on AWS EC2 with domain name: \href{https://dagrad.site}{\textcolor{blue}{dagrad.site}}, which has more than 1000 page views now.}
+        % \resumeItem{The main content is generated by MkDocs, a fast static site generator. The web server process was deployed on Gunicorn, a Python WSGI server. The reverse proxy and static content was provided by Apache. The project was deployed on AWS EC2 with domain name: \href{https://dagrad.site}{\textcolor{blue}{dagrad.site}} }
+    \resumeItemListEnd
+
+\resumeSubheading
+        {Distributed Cloud Disk System on Embedded Device}{Sept -- Nov 2022}
+        {Tsinghua University}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Developed a distributed cloud disk system on several Raspberry Pi 4. The system supports connecting multiple devices under different LANs by running WireGuard on a server with a public IP. Every operation record will be synchronized among all deveices, while files will only be fetched and delivered when requested.}
+        \resumeItem{Automatic disconnect reconnection is supported, no need to reset manually.}
+    \resumeItemListEnd
+
+\resumeSubheading
+        {3D Bin Packing Simulator for Algorithm Testing}{Sept 2021 -- Feb 2022}
+        {Tsinghua University}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Developed a simulator in Python, which provides the interface for researchers to test various packing strategies. Now open sourced on GitHub: \href{https://github.com/yang-d19/Packing-3D-RL}{\textcolor{blue}{yang-d19/Packing-3D-RL} }}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}

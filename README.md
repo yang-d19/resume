@@ -14,6 +14,9 @@ This repo stores tex files for my resume.
 ### robotic
 - 230919: modify title for intelligent car design competition in ACTIVITIES
 
+### robo-software
+- 230930: software engineer in robotic company, delete volunteer activities, add more skills and projects
+
 ### collect.sh
 
 This shell script collects and renames the generated pdf files in different folders to one pdf folder.
