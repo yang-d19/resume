@@ -1,0 +1,177 @@
+% Welcome to the simple Undergraduate Complexity Research CV-resume template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.5in}
+% \addtolength{\basemargin}{-0.5in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% change the font size of each section title
+\titleformat{\section}{\large}{}{0em}{}[\titlerule]
+
+\titlespacing{\section}{4pt}{8pt}{8pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1.5pt}\item
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textnormal{#3} & \textnormal{#4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=11pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%for social icons
+\usepackage{fontawesome5}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\LARGE\textbf{Ding Yang} \\[7.5pt]
+\href{}{\raisebox{-0.05\height}\faHouseUser \ \textcolor{blue}{San Jose, CA} } \ $|$ \ 
+\href{}{\raisebox{-0.05\height}\faPhone \ \textcolor{blue}{(607) 379-2612} } \ $|$ \ 
+\href{mailto:dingtc01@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ \textcolor{blue}{dingtc01@gmail.com}} 
+\end{tabularx}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Cornell University}{Aug 2023 -- May 2024}
+        {Master of Engineering in Electrical and Computer Engineering}{Ithaca, NY, United States}
+    \resumeSubheading
+        {Tsinghua University}{Aug 2019 -- Jun 2023}
+        {Bachelor of Engineering in Automation}{Beijing, China}
+\resumeSubHeadingListEnd
+
+% %-----------Job-----------
+\section{\textbf{JOB EXPERIENCE}}
+
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Software Engineer · WeRide Corp}{Jul 2024 --  Present}
+    {San Jose, CA, United States}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Develop planning and control algorithm for autonomous driving vehicles.}
+        \resumeItem{Integrate third party navigation module in global planner to provide navigation ability.}
+        \resumeItem{Implement lane cruise control function when vehicle is out of navigation.}
+
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------OTHER EXPERIENCE-----------
+\section{\textbf{INTERNSHIP}}
+% if you have been employed, do volunteer activities, or have held other formal or informal jobs, you can list them here.   
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Software Engineer Intern · arXiv}{Sep 2023 --  Jul 2024}
+    {Ithaca, NY, United States}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Participated in the maintainance and improvement of arXiv database in the Google cloud platform.}
+        \resumeItem{Built a robust tex parser that extract key informations from tex source files, then generated relationship structures and visualization graphs.}
+
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern · Airwallex}{Jun -- Sep 2022}
+      {Shanghai, China}{}
+      \resumeItemListStart
+        \small
+        \resumeItem{Assessed transaction risks by building analyzing platform and robust data pipelines. }
+        \resumeItem{Developed a python library named Vivqu based on Apache Spark and AWS Deequ to provide metric verification, visualization, defect analysis.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern · ByteDance}{Aug -- Aug 2021}
+      {Beijing, China}{}
+      \resumeItemListStart
+        \small\resumeItem{Constructed an Operator-Performance dictionary then employed SVM models to fit the existed data and predict performance of new models.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{\textbf{PROJECTS}}
+% it is not expected that applicants have research experience but this section can include experience gained in a laboratory course, shadowing experiences, or group or independent research projects
+\resumeSubHeadingListStart
+
+\resumeSubheading
+        {Information Sharing Website with Authentication}{Jul -- Aug 2023}
+        {Tsinghua University}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Developed a website based on Django to share graduate application and working information within the university, which supports login check and register authentication through school mailbox.}
+        \resumeItem{Generated the main content by MkDocs, a fast static site generator. The web server process was deployed on Gunicorn, and the reverse proxy and static content was provided by Nginx.}
+    \resumeItemListEnd
+
+\resumeSubheading
+        {3D Bin Packing Simulator}{Sep 2021 -- Feb 2022}
+        {Tsinghua University}{}
+    \resumeItemListStart
+        \small
+        \resumeItem{Developed a simulator in Python, which provides the interface for researchers to test various packing strategies. }
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}
